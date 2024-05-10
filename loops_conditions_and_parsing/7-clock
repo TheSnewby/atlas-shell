@@ -12,7 +12,7 @@ do
 	echo "$m"
 	(( m++ ))
 
-	if [ $m -eq 61 ]
+	if [ $m -eq 60 ]
 	then
 		m=1
 		(( h++ ))
