@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#write a clock that from 0:01 to 12:59
+h=0
+m=1
+while [ $h -le 12 ]
+do
+	if [ $m -eq 1 ]
+	then
+		echo "Hour: $h"
+	fi
+	
+	echo "$m"
+	(( m++ ))
+
+	if [ $m -eq 61 ]
+	then
+		m=1
+		(( h++ ))
+	fi
+done
