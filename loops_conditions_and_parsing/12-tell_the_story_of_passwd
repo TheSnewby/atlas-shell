@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#write a silly story about passwd
 IFS=":"
 while read -a array; do
 	username=${array[0]}
