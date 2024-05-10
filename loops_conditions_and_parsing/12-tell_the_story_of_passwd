@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #write a silly story about passwd
 IFS=":"
-while read -a array; do
+while read -ra array; do
 	username=${array[0]}
 	password=${array[1]}
 	userid=${array[2]}
