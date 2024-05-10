@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #for loop to list current directory content (not hidden) where the part of the name after the first dash is displayed
-#LIST="$(ls)"
-for filename in "$(ls)"
+cwd="$(ls)" #current working directory
+for filename in $cwd
 do 
 	echo "$filename" | cut -d '-' -f 2
 done
