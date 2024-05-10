@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+IFS=":"
+while read -a array; do
+	username=${array[0]}
+	password=${array[1]}
+	userid=${array[2]}
+	groupid=${array[3]}
+	useridinfo=${array[4]}
+	homedir=${array[5]}
+	cmdshell=${array[6]}
+
+	echo "The user $username is part of the $groupid gang, lives in $homedir and rides $cmdshell. $userid's place is protected by the passcode $password, more info about the user here: $useridinfo"
+done </etc/passwd
+
+
