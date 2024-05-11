@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#use awk to parse a log file and sort by occurence
+
+awk '{print $1,$9}' apache-access.log | uniq -c | sort -r
